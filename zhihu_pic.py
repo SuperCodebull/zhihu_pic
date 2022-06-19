@@ -32,7 +32,6 @@ num = 0
 for answer in answer_list:
     pic_url_list = answer.xpath('.//span/figure[@data-size="normal"]')
     for pic_url in pic_url_list:
-
         url = pic_url.xpath('./img/@data-original')
         if url:
             url_right = url[0]
